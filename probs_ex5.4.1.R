@@ -1,0 +1,3 @@
+probs <- function(n){
+  1-(1 - 1/n)^n
+}

@@ -36,10 +36,10 @@ View(data.test)
 pred1 <- predict(lm.pr.fit,newdata = data.test)
 ## answer to 10.R.2
 sd(y.test - pred1)
-
+mean((y.test-pred1)^2)
 
 ## 
 train = data.frame(y,x)
 lm.raw.fit <- lm(y~., data = train)
 pred <- predict(lm.raw.fit, newdata = x.test)
-sd(y.test - pred)
+mean((y.test - pred)^2)
